@@ -1,0 +1,9 @@
+# Pipeline: quantidade media vendida por produto de Roupas
+
+pipeline "Quantidade Media Roupas por Produto"
+  load "dados_vendas.csv"
+  filter coluna="categoria" valor="Roupas"
+  group_by coluna="produto" agregacao=media
+  plot tipo=bar eixo_x="produto" eixo_y="quantidade"
+  export "resultado_roupas_produtos.csv"
+end

@@ -1,0 +1,10 @@
+# Pipeline: analise de vendas da regiao Norte
+# Filtra por regiao, agrega por categoria e gera grafico de barras
+
+pipeline "Vendas Norte por Categoria"
+  load "dados_vendas.csv"
+  filter coluna="regiao" valor="Norte"
+  group_by coluna="categoria" agregacao=soma
+  plot tipo=bar eixo_x="categoria" eixo_y="vendas"
+  export "resultado_norte.csv"
+end

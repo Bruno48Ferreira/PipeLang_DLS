@@ -1,0 +1,9 @@
+# Pipeline: media de vendas de eletronicos por regiao
+
+pipeline "Media Eletronicos por Regiao"
+  load "dados_vendas.csv"
+  filter coluna="categoria" valor="Eletronicos"
+  group_by coluna="regiao" agregacao=media
+  plot tipo=bar eixo_x="regiao" eixo_y="vendas"
+  export "resultado_eletronicos.csv"
+end

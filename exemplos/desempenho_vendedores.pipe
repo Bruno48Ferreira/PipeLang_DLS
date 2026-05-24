@@ -1,0 +1,9 @@
+# Pipeline: total de vendas online por vendedor
+
+pipeline "Desempenho Vendedores Online"
+  load "dados_vendas.csv"
+  filter coluna="canal" valor="Online"
+  group_by coluna="vendedor" agregacao=soma
+  plot tipo=bar eixo_x="vendedor" eixo_y="vendas"
+  export "resultado_vendedores_online.csv"
+end
