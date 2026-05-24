@@ -111,10 +111,7 @@ pipelang/
 │   ├── eletronicos_geral.pipe               # média por região
 │   ├── desempenho_vendedores.pipe           # soma por vendedor (Online)
 │   ├── quantidade_por_produto.pipe          # média de unidades por produto
-│   └── contagem_por_estado.pipe             # contagem por estado
-|
-├── colab/
-│   ├── pipelang_colab.ipynb                 
+│   └── contagem_por_estado.pipe             # contagem por estado              
 │
 ├── main.py
 ```
