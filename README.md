@@ -1,8 +1,7 @@
 # PipeLang
 
-**DSL interpretada para análise de dados declarativa**  
-Trabalho prático — Teoria da Computação e Compiladores  
-Fundação Hermínio Ometto (FHO)
+**DSL interpretada para análise de dados **  
+
 
 ---
 
@@ -24,9 +23,6 @@ end
 
 ## Instalação
 
-```bash
-pip install -r requirements.txt
-```
 
 **Dependências:** `ply`, `pandas`, `matplotlib`
 
