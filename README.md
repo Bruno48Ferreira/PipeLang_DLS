@@ -32,13 +32,13 @@ end
 
 ```bash
 # Executar um pipeline
-python main.py examples/vendas_norte.pipe
+python main.py exemplos/vendas_norte.pipe
 
 # Especificar diretório de saída
-python main.py examples/vendas_norte.pipe --output resultados/
+python main.py exemplos/vendas_norte.pipe --output resultados/
 
 # Exibir a AST antes da execução
-python main.py examples/vendas_norte.pipe --ast
+python main.py exemplos/vendas_norte.pipe --ast
 ```
 
 ---
